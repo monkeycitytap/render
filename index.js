@@ -9,6 +9,7 @@ const community_link = "https://t.me/monkeycity_community";
 
 
 bot.start((ctx) => {
+    const imgurUrl = "https://imgur.com/a/GgSjtHN"
     const startPayload = ctx.startPayload;
     const urlSent = `${web_link}?ref=${startPayload}`;
     const user = ctx.message.from;
