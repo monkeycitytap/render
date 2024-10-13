@@ -1,11 +1,11 @@
 const { Telegraf, Markup } = require("telegraf");
-const TOKEN = "7920354517:AAE54Hwan7jN2ed7LQ2bOMXB5QCofMOtdyY";
+const TOKEN = "7797629643:AAEWHOonlUro9gfOHAM2F_TODPJQCWonzSw";
 const bot = new Telegraf(TOKEN);
 const express = require("express");
 const app = express()
 app.use(express.json())
-const web_link = "https://gojotap.netlify.app";
-const community_link = "https://t.me/MR_ETHAN_KELIN";
+const web_link = "https://monkeycity.netlify.app/";
+const community_link = "https://t.me/monkeycity_community";
 
 
 bot.start((ctx) => {
@@ -13,7 +13,7 @@ bot.start((ctx) => {
     const urlSent = `${web_link}?ref=${startPayload}`;
     const user = ctx.message.from;
     const userName = user.username ? `@${user.username}` : user.first_name;
-    ctx.replyWithMarkdown(`*Hey, ${userName}! I am @MR_ETHAN_KELIN , Welcome to CDPTap!*
+    ctx.replyWithMarkdown(`*Hey, ${userName}! I am, Welcome to CDPTap!*
 Mine CDPTap cryptocurrency easily and earn CDPTap tokens.
 
 Start mining now and be among the biggest players earning CDPtap tokens daily.
